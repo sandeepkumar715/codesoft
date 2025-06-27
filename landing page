@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Agency Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    .hero {
+      background: url('https://hindugallery.com/images/Lord-Krishna-Pictures.jpg') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      background-color: rgba(51, 41, 41, 0.5);
+      padding: 10px;
+    }
+
+    .hero button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #ff4d79;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #443026, #ff5e62);
+      color: rgb(197, 180, 180);
+      text-align: center;
+    }
+
+    .feature {
+      width: 30%;
+    }
+
+    .about {
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .about img {
+      max-width: 40%;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      width: 55%;
+    }
+
+    .about-text h2 {
+      margin-bottom: 10px;
+    }
+
+    .services {
+      background: #f2f2f2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .service-cards {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .features, .about, .service-cards {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .feature, .about img, .about-text, .card {
+        width: 100%;
+      }
+
+      .about {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Landing Page</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Creative Digital Agency</h1>
+    <button>Read More</button>
+    <button>Request a Consult</button>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Launch Business</h3>
+      <p>Floor design is created by our expert designer to provide a attractive looks.</p>
+    </div>
+    <div class="feature">
+      <h3>Online Support Team</h3>
+      <p>designer team.</p>
+    </div>
+    <div class="feature">
+      <h3>Time Management</h3>
+      <p>Provide design within a weeks.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>15 years, we are passionate about achieving better results for our clients. Trusted ever since the 1500s.</p>
+      <button>Read More</button>
+    </div>
+    <img src="https://img.freepik.com/free-photo/businessman-thinking_144627-27745.jpg" alt="Businessman">
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/user-experience-ux-concept_53876-121061.jpg" alt="User Experience">
+        <h3>User Experience</h3>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/creative-design-team_1098-15285.jpg" alt="Creative Design">
+        <h3>Creative Design</h3>
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/retina-ready-screen_53876-13478.jpg" alt="Retina Ready">
+        <h3>Retina Ready</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Landing Page | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
